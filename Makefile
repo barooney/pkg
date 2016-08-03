@@ -1,18 +1,20 @@
 TITLE_ID = XVITAPKGX
 TARGET   = pkg
+JSON_SRCS = $(wildcard json/*.c) 
 VU_SRCS  = $(wildcard vu/*.c)
-SRCS     = main.c $(VU_SRCS)
+SRCS     = main.c $(VU_SRCS) $(JSON_SRCS)
 OBJS     = $(addsuffix .o, $(SRCS))
 
 LIBS = -lvita2d -lSceKernel_stub -lSceDisplay_stub -lSceGxm_stub \
 	-lSceSysmodule_stub -lSceCtrl_stub -lScePgf_stub \
-	-lSceCommonDialog_stub -lfreetype -lpng -ljpeg -lz -lm -lc
+	-lSceCommonDialog_stub -lfreetype -lpng -ljpeg -lz -lm -lc -ljansson
 
-CC      = arm-vita-eabi-gcc
-CXX     = arm-vita-eabi-g++
-CFLAGS  = -Wl,-q -Wall -O3 -I.
-CXXFLAGS  = -Wl,-q -Wall -O3 -I. -std=c++0x
-ASFLAGS = $(CFLAGS)
+CC       = arm-vita-eabi-gcc
+CXX      = arm-vita-eabi-g++
+CFLAGS   = -Wl,-q -Wall -O3 -I.
+STRIP    = arm-vita-eabi-strip
+CXXFLAGS = -Wl,-q -Wall -O3 -I. -std=c++0x
+ASFLAGS  = $(CFLAGS)
 
 all: $(TARGET).vpk
 

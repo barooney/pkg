@@ -1,0 +1,34 @@
+[
+  {
+    "name": "mGBA",
+    "TITLEID": "XXXX0002",
+    "description": "is a gba emulator",
+    "icon": "http://github.com/vitadev/pkg-repo/mgba/icon.jpg",
+    "screenshots": [
+      "http://github.com/vitadev/pkg-repo/mgba/screenshot-1.jpg",
+      "http://github.com/vitadev/pkg-repo/mgba/screenshot-2.jpg",
+      "http://github.com/vitadev/pkg-repo/mgba/screenshot-3.jpg"
+    ],
+    "latest": "0.90.1",
+    "versions": {
+      "0.32.1": "http://example.com/mgba-0.32.1.vpk",
+      "0.90.1": "http://example.com/vitadoom-0.90.1.vpk"
+    }
+  },
+  {
+    "name": "VitaDOOM",
+    "TITLEID": "XXXX0000",
+    "description": "is a gba emulator",
+    "icon": "http://github.com/vitadev/pkg-repo/vitadoom/icon.jpg",
+    "screenshots": [
+      "http://github.com/vitadev/pkg-repo/vitadoom/screenshot-1.jpg",
+      "http://github.com/vitadev/pkg-repo/vitadoom/screenshot-2.jpg",
+      "http://github.com/vitadev/pkg-repo/vitadoom/screenshot-3.jpg"
+    ],
+    "latest": "0.0.4",
+    "versions": {
+      "0.0.1": "http://example.com/vitadoom-0.0.1.vpk",
+      "0.0.4": "http://example.com/vitadoom-0.0.4.vpk"
+    }
+  }
+]
